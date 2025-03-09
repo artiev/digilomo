@@ -9,6 +9,12 @@ emulsions using a digital image.
 
 By Arthur Van de Wiele. Visit https://github.com/artiev/digilomo for updates.
 
+Links to Lomography's Website
+-----------------------------
+- [Lomo Purple Film (35mm)](https://shop.lomography.com/eu/lomochrome-purple-35-mm-iso-100-400-2021-formula)
+- [Lomo Turquoise Film (35mm)](https://shop.lomography.com/eu/2021-lomochrome-turquoise-35-mm-iso-100-400)
+- [Lomo Purple Guide (pdf)](https://cdn.downloads.lomography.com/downloads/turquoise-film-guide.pdf)
+- [Lomo Turquoise Guide (pdf)](https://cdn.downloads.lomography.com/downloads/lomochrome-purple-film-guide.pdf)
 
 The Process in short
 --------------------
