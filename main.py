@@ -86,21 +86,21 @@ def explode_path(path):
   Extract folder, filename and extension.
   """
   
-  dirname = os.path.dirname(input)
-  basename, extension = os.path.splitext(os.path.basename(input))
+  dirname = os.path.dirname(path)
+  basename, extension = os.path.splitext(os.path.basename(path))
 
   return dirname, basename, extension
 
 
 @click.command()
-@click.option('--input', help="Path to the image.")
-@click.option('--output', help="Path to the image.")
+@click.option('--src', help="Path to the image.")
+@click.option('--dst', help="Path to the image.")
 @click.option('--recipe', default="purple", help="Purple or Turquoise.")
 @click.option('--quality', default=95, help="JPEG Compression Quality. Defaults to 95")
 @click.option('--blur-radius', default=0, help="Gaussian Blur value. Defaults to 0. None:0, Mid:5, High>10")
-@click.option('--noise-strength', default=0, help="Gaussian Noise strength. Defaults to 20. None:0, Mid:525, High>100")
+@click.option('--noise-strength', default=20, help="Gaussian Noise strength. Defaults to 20. None:0, Mid:25, High>100")
 @click.option('--preview', is_flag = True, help="Generates a small image of max 1024pixel int he long axis.")
-def main( input:str, output:str, recipe:str, quality:int, blur_radius:int, noise_strength:int, preview:bool ):
+def main( src:str, dst:str, recipe:str, quality:int, blur_radius:int, noise_strength:int, preview:bool ):
 
   logger.info('-------------------')
   logger.info('-  Digi Lomo App  -')
@@ -111,13 +111,15 @@ def main( input:str, output:str, recipe:str, quality:int, blur_radius:int, noise
   logger.info('-------------------')
 
   recipe = recipe.lower()
-  dirname, basename, extension = explode_path(input)
+  dirname, basename, extension = explode_path(src)
 
-  if not output:
-     output = f'{dirname}/{basename}-lomo-{recipe}{extension}'
+  if not dst:
+     output_path = f'{dirname}/{basename}-lomo-{recipe}{extension}'
+  else:
+     output_path = dst
 
-  logger.info(f'Loading image {input} and extracting color channels.')
-  source = Image.open(input).convert('RGB')
+  logger.info(f'Loading image {src} and extracting color channels.')
+  source = Image.open(src).convert('RGB')
 
   if preview:
     logger.warning('Running in preview mode. Output size and quality is restricted.')
@@ -147,8 +149,8 @@ def main( input:str, output:str, recipe:str, quality:int, blur_radius:int, noise
     destination = add_gaussian_noise(destination, noise_strength)
 
 
-  logger.info(f'Saving new image to {output}.')
-  destination.save(output, subsampling=0, quality=quality)
+  logger.info(f'Saving new image to {output_path}.')
+  destination.save(output_path, subsampling=0, quality=quality)
 
   logger.info('-------------------')
   logger.info('All done. Bye.')
