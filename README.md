@@ -28,9 +28,10 @@ image.
 
 Warning
 -------
-I only tested the conversion with Fujifilm X-Trans CMOS 5 HR images shot in JPEG
+- **[Digital Files]** I only tested the conversion with Fujifilm X-Trans CMOS 5 HR images shot in JPEG
 with my X-T50. Feel free to report on other models, brands and JPEGs but it
 should give very similar results.
+- **[Speed]** The conversion and color correction is very fast, even on large images, but the noise generation takes a long time. Just disable the noise if you want using ``--noise-strength 0``.
 
 The comparison between real film and the interpreted image
 ----------------------------------------------------------
@@ -50,14 +51,23 @@ Conversion Samples
 
 Original | Digital Lomo Purple | Digital Lomo Turquoise
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-02-173158.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-02-173158-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-02-173158-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-114259.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-114259-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-114259-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2025-01-03-1147042.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2025-01-03-1147042-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2025-01-03-1147042-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-121734.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-121734-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-121734-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-190245.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-190245-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-08-05-190245-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-09-22-114331.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-09-22-114331-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-09-22-114331-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-09-22-1114231.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-09-22-1114231-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-09-22-1114231-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2024-12-25-1248461.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-12-25-1248461-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2024-12-25-1248461-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
+![](https://github.com/artiev/digilomo/blob/main/samples/2025-01-03-1144512.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2025-01-03-1144512-lomo-purple.jpg?raw=true)|![](https://github.com/artiev/digilomo/blob/main/samples/2025-01-03-1144512-lomo-turquoise.jpg?raw=true)
 :-:|:-:|:-:
 
 Conversion Artifacts
